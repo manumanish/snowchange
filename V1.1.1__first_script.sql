@@ -1,11 +1,11 @@
 CREATE DATABASE manish;
-USE DATABASE manish;
+-- USE DATABASE manish;
 
-CREATE SCHEMA temp;
-USE SCHEMA temp;
+-- CREATE SCHEMA temp;
+-- USE SCHEMA temp;
 
-CREATE TABLE Deatils
-(
-   FIRST_NAME STRING,
-   LAST_NAME STRING
-);
+-- CREATE TABLE Deatils
+-- (
+--    FIRST_NAME STRING,
+--    LAST_NAME STRING
+-- );
