@@ -1,0 +1,31 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+- group: snowchange-demo-variables
+steps:
+- task: UsePythonVersion@0
+  displayName: 'Use Python 3.8.x'
+  inputs:
+    versionSpec: '3.8.x'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      echo 'Starting bash task'
+      echo "PROJECT_FOLDER $(PROJECT_FOLDER)"
+      python --version
+      echo 'Step 1: Installing snowchange'
+      pip install snowchange --upgrade
+      echo 'Step 2: Running snowchange'
+      snowchange -a eaa02539.us-east-1 -u manish -r ACCOUNTADMIN -w COMPUTE_WH -d PRAC1 
+  env:
+    SNOWFLAKE_PASSWORD: $(SF_PASSWORD)
