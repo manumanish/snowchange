@@ -26,6 +26,6 @@ steps:
       echo 'Step 1: Installing snowchange'
       pip install snowchange --upgrade
       echo 'Step 2: Running snowchange'
-      snowchange -a eaa02539.us-east-1 -u manish -r SYSADMIN -w COMPUTE_WH  
+      snowchange -a eaa02539.us-east-1 -u manish -r SYSADMIN -w COMPUTE_WH -d PRAC1 -c PRAC1.SNOWCHANGE.CHANGE_HISTORY --create-change-history-table  
   env:
     SNOWFLAKE_PASSWORD: $(SF_PASSWORD)
