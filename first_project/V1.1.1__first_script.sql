@@ -3,7 +3,7 @@
 
 -- -- CREATE SCHEMA temp;
 -- -- USE SCHEMA temp;
-
+USE SCHEMA PUBLIC;
 CREATE TABLE Deatils
 (
    FIRST_NAME STRING,
