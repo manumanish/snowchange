@@ -7,4 +7,4 @@ CREATE TABLE Temp
    Mobile STRING
 );
 
-insert into temp VALUES("manish","kumar","234");
+insert into Temp( FIRST_NAME,LAST_NAME,Mobile) VALUES("manish","kumar","234");
