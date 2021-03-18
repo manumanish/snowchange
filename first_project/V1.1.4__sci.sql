@@ -12,4 +12,4 @@ insert into EMP_DET(FIRST_NAME,LAST_NAME) VALUES ('ghu','kumar');
 
 
 
-V1.1.4__sci.sql
+
