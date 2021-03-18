@@ -1,3 +1,5 @@
+
+USE SCHEMA PUBLIC;
 CREATE TABLE EMP_DET
 (
    FIRST_NAME STRING,
@@ -7,3 +9,7 @@ CREATE TABLE EMP_DET
 insert into EMP_DET(FIRST_NAME,LAST_NAME) VALUES ('manish','kumar');
 insert into EMP_DET(FIRST_NAME,LAST_NAME) VALUES ('ravi','kumar');
 insert into EMP_DET(FIRST_NAME,LAST_NAME) VALUES ('ghu','kumar');
+
+
+
+V1.1.4__sci.sql
